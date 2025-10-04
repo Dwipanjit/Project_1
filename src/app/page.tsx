@@ -14,12 +14,12 @@ export default function Home() {
               Dwipanjit Handique
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Manager, Punjab National Bank | Research Analyst | Trading Specialist
+              FinTech Manager | Algorithmic Trading | Data Analytics
             </p>
             <p className="text-lg text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Experienced banking professional with 7+ years in financial management, portfolio handling of Rs. 50-150 Crores, 
-              and expertise in derivatives trading, technical analysis, and risk management. Certified Research Analyst (NISM Series-XV) 
-              with a strong focus on algorithmic trading and crypto market analysis.
+              Banking technologist specializing in algorithmic trading systems, quantitative analysis, and financial data engineering. 
+              Building automated trading strategies, risk management algorithms, and crypto trading bots. 
+              Passionate about fintech innovation and market data science.
             </p>
           </div>
 
@@ -59,11 +59,10 @@ export default function Home() {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
               <p className="text-center leading-relaxed">
-              I&apos;m a seasoned banking professional with over 7 years of experience in financial management and trading. 
-              Currently serving as Manager at Punjab National Bank, I specialize in portfolio management, risk assessment, 
-              and derivatives trading. My expertise spans technical analysis, algorithmic trading strategies, and crypto market research. 
-              I hold a Master&apos;s in Computer Application and am a certified Research Analyst (NISM Series-XV), 
-              combining my technical background with deep financial market knowledge.
+              I&apos;m a fintech engineer with 7+ years building trading systems and financial algorithms. 
+              Currently managing digital banking operations at Punjab National Bank, I develop automated trading strategies, 
+              risk management models, and crypto trading bots. My tech stack includes Python, R, SQL, and various trading APIs. 
+              I&apos;m passionate about machine learning in finance, quantitative analysis, and building scalable fintech solutions.
               </p>
             </div>
           </div>
