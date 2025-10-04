@@ -22,7 +22,9 @@ export default function ContactForm() {
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
 
       if (!serviceId || !templateId || !publicKey) {
-        throw new Error('EmailJS configuration is missing. Please check your environment variables.')
+        setError('EmailJS is not configured yet. Please check the setup guide in EMAILJS_SETUP_GUIDE.md or contact me directly at your-email@example.com')
+        setIsLoading(false)
+        return
       }
 
       // Prepare template parameters
