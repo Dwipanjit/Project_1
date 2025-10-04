@@ -1,27 +1,31 @@
 # 📧 EmailJS Setup Guide for Contact Form
 
 ## 🚨 **Current Issue**
+
 Your contact form is showing an error because EmailJS environment variables are not configured. Follow this guide to fix it!
 
 ## 📋 **Step-by-Step Setup**
 
 ### **Step 1: Create EmailJS Account**
+
 1. Go to [https://www.emailjs.com/](https://www.emailjs.com/)
 2. Click **"Sign Up"** or **"Get Started"**
 3. Create your account (free tier available)
 
 ### **Step 2: Create Email Service**
+
 1. In your EmailJS dashboard, go to **"Email Services"**
 2. Click **"Add New Service"**
 3. Choose your email provider:
    - **Gmail** (recommended for personal use)
-   - **Outlook** 
+   - **Outlook**
    - **Yahoo**
    - Or any other provider
 4. Follow the setup instructions for your chosen provider
 5. **Copy the Service ID** (e.g., `service_abc123`)
 
 ### **Step 3: Create Email Template**
+
 1. Go to **"Email Templates"** in your dashboard
 2. Click **"Create New Template"**
 3. Use this template content:
@@ -45,11 +49,13 @@ Your Portfolio Website
 4. **Copy the Template ID** (e.g., `template_xyz789`)
 
 ### **Step 4: Get Public Key**
+
 1. Go to **"Account"** → **"General"**
 2. Find **"Public Key"** section
 3. **Copy your Public Key** (e.g., `user_abc123def456`)
 
 ### **Step 5: Update Environment Variables**
+
 1. Open `.env.local` file in your project root
 2. Replace the placeholder values:
 
@@ -61,6 +67,7 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=user_abc123def456
 ```
 
 ### **Step 6: Restart Development Server**
+
 ```bash
 # Stop the current server (Ctrl+C)
 # Then restart:
@@ -77,6 +84,7 @@ If you want to test the form quickly without EmailJS:
 ## ✅ **Verification**
 
 After setup, your contact form should:
+
 - ✅ Show "Sending..." when submitted
 - ✅ Display success message after sending
 - ✅ Send actual emails to your inbox

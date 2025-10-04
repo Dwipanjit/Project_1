@@ -16,13 +16,22 @@ export default function ContactForm() {
     setError('')
 
     try {
-      // EmailJS configuration
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      // EmailJS configuration - temporarily hardcoded for testing
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_yrf3s8b'
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_hiv4nsv'
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'CMbo_BvO5NIwhlePF'
+
+      console.log('EmailJS Config Debug:', {
+        serviceId,
+        templateId,
+        publicKey,
+        hasServiceId: !!serviceId,
+        hasTemplateId: !!templateId,
+        hasPublicKey: !!publicKey
+      })
 
       if (!serviceId || !templateId || !publicKey) {
-        setError('EmailJS is not configured yet. Please check the setup guide in EMAILJS_SETUP_GUIDE.md or contact me directly at your-email@example.com')
+        setError(`EmailJS configuration missing. Service: ${!!serviceId}, Template: ${!!templateId}, Key: ${!!publicKey}. Please check your .env.local file.`)
         setIsLoading(false)
         return
       }
