@@ -14,11 +14,13 @@ export default function Home() {
               Dwipanjit Handique
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-2xl mx-auto">
-              Full Stack Developer & Tech Enthusiast
+              Finance Professional | Quantitative Trading | Tech Builder
             </p>
             <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
-              Passionate about creating innovative solutions and building amazing user experiences. 
-              I love working with modern technologies and turning ideas into reality through code.
+              After nearly a decade of managing portfolios and operations at Punjab National Bank, 
+              I&apos;ve transitioned my analytical and market expertise into building data-driven trading 
+              and research applications. Focused on blending financial strategy, technical analysis, 
+              and algorithmic automation.
             </p>
           </div>
 
@@ -58,10 +60,15 @@ export default function Home() {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="text-center leading-relaxed">
-              I&apos;m a passionate developer who loves creating digital solutions that make a difference. 
-              With expertise in modern web technologies, I enjoy building everything from simple websites 
-              to complex web applications. When I&apos;m not coding, you can find me exploring new technologies, 
-              contributing to open source projects, or sharing knowledge with the developer community.
+              I&apos;m Dwipanjit Handique, a finance professional turned quantitative trading enthusiast and tech builder. 
+              With a foundation in Computer Applications and a certification as a NISM Series-XV Research Analyst, 
+              I focus on blending financial strategy, technical analysis, and algorithmic automation. My current projects 
+              include building AI-assisted market scanning dashboards and exploring full-stack web app development using 
+              modern tools like Next.js, Supabase, and Cursor AI IDE.
+              </p>
+              <p className="text-center leading-relaxed mt-4">
+              My goal is to create scalable, production-ready tools that empower traders and investors with 
+              institutional-grade insights delivered through intuitive web interfaces.
               </p>
             </div>
           </div>
