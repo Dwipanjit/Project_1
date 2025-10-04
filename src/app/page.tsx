@@ -83,21 +83,10 @@ function FloatingText() {
 
   return (
     <Center>
-      <Text3D
-        ref={textRef}
-        font="/fonts/helvetiker_regular.typeface.json"
-        size={0.5}
-        height={0.1}
-        curveSegments={12}
-        bevelEnabled
-        bevelThickness={0.02}
-        bevelSize={0.02}
-        bevelOffset={0}
-        bevelSegments={5}
-      >
-        DWIPANJIT
-        <meshNormalMaterial />
-      </Text3D>
+      <mesh ref={textRef}>
+        <boxGeometry args={[2, 0.5, 0.1]} />
+        <meshStandardMaterial color="#8b5cf6" />
+      </mesh>
     </Center>
   )
 }
@@ -105,7 +94,7 @@ function FloatingText() {
 // Particle System
 function ParticleField() {
   const points = useRef()
-  const particleCount = 2000
+  const particleCount = 500
   
   const positions = new Float32Array(particleCount * 3)
   for (let i = 0; i < particleCount; i++) {
@@ -131,7 +120,7 @@ function ParticleField() {
           itemSize={3}
         />
       </bufferGeometry>
-      <pointsMaterial size={0.02} color="#60a5fa" transparent opacity={0.6} />
+      <pointsMaterial size={0.05} color="#60a5fa" transparent opacity={0.8} />
     </points>
   )
 }
@@ -402,17 +391,19 @@ export default function Home() {
       
       {/* 3D Background Canvas */}
       <div className="fixed inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10, 10, 10]} />
-          <ParticleField />
-          <AnimatedSphere />
-          <EffectComposer>
-            <Bloom intensity={0.5} />
-            <ChromaticAberration offset={[0.001, 0.001]} />
-          </EffectComposer>
-          <OrbitControls enableZoom={false} enablePan={false} />
-        </Canvas>
+        <Suspense fallback={<div className="w-full h-full bg-gradient-to-br from-purple-900 to-blue-900" />}>
+          <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
+            <ambientLight intensity={0.5} />
+            <pointLight position={[10, 10, 10]} />
+            <ParticleField />
+            <AnimatedSphere />
+            <EffectComposer>
+              <Bloom intensity={0.5} />
+              <ChromaticAberration offset={[0.001, 0.001]} />
+            </EffectComposer>
+            <OrbitControls enableZoom={false} enablePan={false} />
+          </Canvas>
+        </Suspense>
       </div>
 
       {/* Floating UI Controls */}
