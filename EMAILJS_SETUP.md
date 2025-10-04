@@ -7,11 +7,13 @@ Your contact form has been successfully updated with EmailJS integration. Now yo
 ## 📋 Step-by-Step Setup:
 
 ### 1. Create EmailJS Account
+
 1. Go to [https://www.emailjs.com/](https://www.emailjs.com/)
 2. Sign up for a free account
 3. Verify your email address
 
 ### 2. Set Up Email Service
+
 1. In your EmailJS dashboard, go to **Email Services**
 2. Click **Add New Service**
 3. Choose your email provider (Gmail, Outlook, etc.)
@@ -19,6 +21,7 @@ Your contact form has been successfully updated with EmailJS integration. Now yo
 5. **Copy your Service ID** (you'll need this)
 
 ### 3. Create Email Template
+
 1. Go to **Email Templates**
 2. Click **Create New Template**
 3. Use this template content:
@@ -42,10 +45,12 @@ Your Portfolio Website
 4. **Copy your Template ID** (you'll need this)
 
 ### 4. Get Public Key
+
 1. Go to **Account** → **General**
 2. **Copy your Public Key** (you'll need this)
 
 ### 5. Update Environment Variables
+
 1. Open `.env.local` file in your project root
 2. Replace the placeholder values with your actual EmailJS credentials:
 
@@ -56,6 +61,7 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_actual_public_key
 ```
 
 ### 6. Test Your Contact Form
+
 1. Restart your development server: `npm run dev`
 2. Go to your portfolio: `http://localhost:3002`
 3. Fill out the contact form
@@ -73,12 +79,14 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_actual_public_key
 ## 🔧 Troubleshooting:
 
 ### If emails don't arrive:
+
 1. Check your spam folder
 2. Verify EmailJS credentials are correct
 3. Check browser console for errors
 4. Ensure your email service is properly connected
 
 ### If you see "EmailJS configuration is missing":
+
 1. Make sure `.env.local` file exists
 2. Verify environment variable names are correct
 3. Restart your development server after changes
