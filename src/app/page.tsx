@@ -11,21 +11,22 @@ export default function Home() {
               <span className="text-4xl font-bold text-white">D</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-              Dwipanjit
+              Dwipanjit Handique
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Full Stack Developer & Tech Enthusiast
+              Manager, Punjab National Bank | Research Analyst | Trading Specialist
             </p>
             <p className="text-lg text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Passionate about creating innovative solutions and building amazing user experiences. 
-              I love working with modern technologies and turning ideas into reality through code.
+              Experienced banking professional with 7+ years in financial management, portfolio handling of Rs. 50-150 Crores, 
+              and expertise in derivatives trading, technical analysis, and risk management. Certified Research Analyst (NISM Series-XV) 
+              with a strong focus on algorithmic trading and crypto market analysis.
             </p>
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
             <a
-              href="https://linkedin.com/in/dwipanjit"
+              href="https://linkedin.com/in/dwipanjit-handique-5a872521b"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center space-x-2 bg-white dark:bg-gray-800 px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
@@ -58,10 +59,11 @@ export default function Home() {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
               <p className="text-center leading-relaxed">
-              I&apos;m a passionate developer who loves creating digital solutions that make a difference. 
-              With expertise in modern web technologies, I enjoy building everything from simple websites 
-              to complex web applications. When I&apos;m not coding, you can find me exploring new technologies, 
-              contributing to open source projects, or sharing knowledge with the developer community.
+              I&apos;m a seasoned banking professional with over 7 years of experience in financial management and trading. 
+              Currently serving as Manager at Punjab National Bank, I specialize in portfolio management, risk assessment, 
+              and derivatives trading. My expertise spans technical analysis, algorithmic trading strategies, and crypto market research. 
+              I hold a Master&apos;s in Computer Application and am a certified Research Analyst (NISM Series-XV), 
+              combining my technical background with deep financial market knowledge.
               </p>
             </div>
           </div>
@@ -79,7 +81,7 @@ export default function Home() {
       <footer className="bg-gray-900 dark:bg-gray-950 text-white py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
-            © 2024 Dwipanjit. Built with Next.js and Tailwind CSS.
+            © 2025 Dwipanjit. Built with Next.js and Tailwind CSS.
           </p>
         </div>
       </footer>
