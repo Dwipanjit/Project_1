@@ -1,4 +1,5 @@
 import ContactForm from '@/components/ContactForm'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -7,8 +8,15 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-4xl font-bold text-white">D</span>
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+              <Image
+                src="/profile.jpg"
+                alt="Dwipanjit Handique"
+                width={128}
+                height={128}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
               Dwipanjit Handique
