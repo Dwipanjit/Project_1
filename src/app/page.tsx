@@ -58,10 +58,10 @@ export default function Home() {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
               <p className="text-center leading-relaxed">
-                I'm a passionate developer who loves creating digital solutions that make a difference. 
-                With expertise in modern web technologies, I enjoy building everything from simple websites 
-                to complex web applications. When I'm not coding, you can find me exploring new technologies, 
-                contributing to open source projects, or sharing knowledge with the developer community.
+              I&apos;m a passionate developer who loves creating digital solutions that make a difference. 
+              With expertise in modern web technologies, I enjoy building everything from simple websites 
+              to complex web applications. When I&apos;m not coding, you can find me exploring new technologies, 
+              contributing to open source projects, or sharing knowledge with the developer community.
               </p>
             </div>
           </div>
