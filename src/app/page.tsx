@@ -14,12 +14,11 @@ export default function Home() {
               Dwipanjit Handique
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-2xl mx-auto">
-              FinTech Manager | Algorithmic Trading | Data Analytics
+              Full Stack Developer & Tech Enthusiast
             </p>
             <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
-              Banking technologist specializing in algorithmic trading systems, quantitative analysis, and financial data engineering. 
-              Building automated trading strategies, risk management algorithms, and crypto trading bots. 
-              Passionate about fintech innovation and market data science.
+              Passionate about creating innovative solutions and building amazing user experiences. 
+              I love working with modern technologies and turning ideas into reality through code.
             </p>
           </div>
 
@@ -59,10 +58,10 @@ export default function Home() {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="text-center leading-relaxed">
-              I&apos;m a fintech engineer with 7+ years building trading systems and financial algorithms. 
-              Currently managing digital banking operations at Punjab National Bank, I develop automated trading strategies, 
-              risk management models, and crypto trading bots. My tech stack includes Python, R, SQL, and various trading APIs. 
-              I&apos;m passionate about machine learning in finance, quantitative analysis, and building scalable fintech solutions.
+              I&apos;m a passionate developer who loves creating digital solutions that make a difference. 
+              With expertise in modern web technologies, I enjoy building everything from simple websites 
+              to complex web applications. When I&apos;m not coding, you can find me exploring new technologies, 
+              contributing to open source projects, or sharing knowledge with the developer community.
               </p>
             </div>
           </div>
